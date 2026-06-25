@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<h2>Edit Patient</h2>
+
+
+<form method="POST">
+
+
+<input 
+class="form-control"
+name="full_name"
+value="{{patient.full_name}}">
+
+
+<br>
+
+
+<input 
+class="form-control"
+name="email"
+value="{{patient.email}}">
+
+
+<br>
+
+
+<input 
+class="form-control"
+name="glucose"
+value="{{patient.glucose}}">
+
+
+<br>
+
+
+<input 
+class="form-control"
+name="hemoglobin"
+value="{{patient.hemoglobin}}">
+
+
+<br>
+
+
+<input 
+class="form-control"
+name="cholesterol"
+value="{{patient.cholesterol}}">
+
+
+<br>
+
+
+<button class="btn btn-success">
+
+Update
+
+</button>
+
+
+</form>
+
+
+{% endblock %}
